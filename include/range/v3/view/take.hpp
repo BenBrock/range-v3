@@ -40,7 +40,7 @@ namespace ranges
     {
     private:
         CPP_assert(view_<Rng>);
-        Rng base_ = Rng();
+        Rng base_;
         range_difference_t<Rng> count_ = 0;
         template<bool Const>
         struct sentinel
